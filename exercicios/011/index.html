@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegado</p>
+    <picture>
+        <source media="(max-width:200px )" srcset="imagem/foto-Pp.png" type="image/png">
+        <source media="(max-width:750px )" srcset="imagem/foto-p.png" sizes="image/png">
+        <source media="(max-width: 1050px )" srcset="imagem/foto-m.png" sizes="image/png">
+        <img src="imagem/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+    <h1>Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <p>Caso nao funcione abaixe o áudio aqui em baixo <a href="midia/happy-mistake.mp3">aperte aqui para abaixar</a></p>
+    </audio>
+</body>
+</html>
