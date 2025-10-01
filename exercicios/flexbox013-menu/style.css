@@ -22,6 +22,10 @@ header{
     align-items: center;
     flex: 0 0 200px;
 }
+h1{
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.699);
+}
 main {
     background-color: white;
     padding: 10px;
@@ -49,3 +53,4 @@ nav > a:hover{
     background-color: white;
     transition: background-color .5;
 }
+
