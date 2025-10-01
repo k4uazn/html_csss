@@ -12,9 +12,14 @@ body {
     width: 100vw;
     height: 100vh;
 }
-p,h1,h2{
+p{
     margin-bottom: 10px;
     text-align: justify;
+}
+h1,h2 {
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: left;
 }
 header,.normal {
     padding: 20px;
@@ -22,4 +27,40 @@ header,.normal {
 .flex-container {
     background-color: rgba(128, 128, 128, 0.411);
     padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+div>article {
+    border: 2px dashed green;
+}
+.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+ article>div.text{
+    flex:1 1 500px;
+
+
+}
+article>div.media {
+    flex: 1 0 500px;
+}
+.midia>img{
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+}
+.media>iframe {
+    display: block;
+    margin: auto;
+    width: 90vw;
+
 }
