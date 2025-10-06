@@ -12,6 +12,17 @@
             grid-template-columns: auto auto auto;
             grid-template-rows: auto auto auto;
             gap: 5px;
+            
+            /*   SIMPLIFICACAO NESSA MESMA ORDEM
+             align-items: stretch;
+            justify-items: start;
+            align-content: stretch;
+            justify-content: end;*/
+
+            place-items:  stretch start;
+            place-content: stretch end;
+            
+        
 
         }
         .item {
@@ -21,6 +32,7 @@
     </style>
 </head>
 <body>
+   
     <div class="container">
         <div class="item">A</div>
         <div class="item">B</div>
@@ -29,7 +41,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
-        <div class="item">H</div>
+        <div class="item">H
+
+        </div>
     </div>
 </body>
 </html>
