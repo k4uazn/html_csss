@@ -9,7 +9,8 @@
             border: 3px solid blue;
             height: 250px;
             display: grid;
-            grid-template:repeat(3,auto)/repeat(3,auto);
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
             gap: 5px;
             
             /*   SIMPLIFICACAO NESSA MESMA ORDEM
@@ -18,8 +19,8 @@
             align-content: stretch;
             justify-content: end;*/
 
-            place-items:  start center;
-            place-content: space-between end;
+            place-items:  stretch start;
+            place-content: stretch end;
             
         
 
